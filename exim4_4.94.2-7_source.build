@@ -1,0 +1,463 @@
+ dpkg-buildpackage -us -uc -ui -i -d -S
+dpkg-buildpackage: info: source package exim4
+dpkg-buildpackage: info: source version 4.94.2-7
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Andreas Metzler <ametzler@debian.org>
+ dpkg-source -i --before-build .
+ debian/rules clean
+dh clean --no-parallel
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/root/git/repo_src/_build'
+debconf-updatepo
+rm -rf build-* doc/tmp test/ b-exim*
+rm -f EDITME.* unpack-configs-stamp bdir-stamp
+rm -f /root/git/repo_src/_build/debian/debconf/exim4.conf.template /root/git/repo_src/_build/debian/files \
+	/root/git/repo_src/_build/debian/README.Debian /root/git/repo_src/_build/debian/README.Debian.html \
+	/root/git/repo_src/_build/debian/berkeleydb.sed
+#these are identical for all daemon-* and therefore symlinked
+#pwd
+chmod 755 /root/git/repo_src/_build/debian/exim-gencert \
+	/root/git/repo_src/_build/debian/lynx-dump-postprocess /root/git/repo_src/_build/debian/script \
+	/root/git/repo_src/_build/debian/exim-adduser
+make[1]: Leaving directory '/root/git/repo_src/_build'
+   dh_autoreconf_clean -O--no-parallel
+   dh_clean -O--no-parallel
+ dpkg-source -i -b .
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: warning: upstream signing key but no upstream tarball signature
+dpkg-source: info: building exim4 using existing ./exim4_4.94.2.orig.tar.xz
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: warning: ignoring deletion of file README.UPDATING, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ABOUT, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file CONTRIBUTING, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file NOTICE, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file LICENSE.opendmarc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file CHANGES, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file LICENCE, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .ctags, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file README.DSN, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ACKNOWLEDGMENTS, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory exim_monitor
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_queue.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_xs.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/EDITME, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_globals.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_init.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_version.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_log.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_text.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_menu.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_main.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_StripChart.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_strip.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_hdr.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exim_monitor/em_TextPop.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory src
+dpkg-source: warning: ignoring deletion of file src/mime.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/local_scan.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exipick.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/version.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/debug.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookupapi.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dbfn.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/tree.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exim_dbmbuild.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/tod.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/spf.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/version.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/verify.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exicyclog.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/setenv.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/aliases.default, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/moan.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/tls-gnu.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/memcheck.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/malware.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/spam.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exiqsumm.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/receive.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/queue.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/search.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/store.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dmarc.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/srs.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/spf.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/readconf.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exiqgrep.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dkim.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/mime.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/eximon.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/EDITME, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/globals.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/convert4r4.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/blob.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/imap_utf7.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/directory.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/filter.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/bmi_spam.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dane.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/spool_out.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/smtp_out.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dcc.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/expand.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/daemon.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/globals.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/header.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/spool_in.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exim_lock.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/buildconfig.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dmarc.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/hash.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/environment.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/osfunctions.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/hash.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/sieve.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/string.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/config.h.defaults, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/macros.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/arc.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/local_scan.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/retry.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/tls-openssl.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/utf8.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exim.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/eximstats.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/log.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dummies.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/acl.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/deliver.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/md5.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/tls.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/os.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/parse.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lss.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/enq.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transport-filter.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dbstuff.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exim_dbutil.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transport.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/regex.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exigrep.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/srs.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/priv.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/macro_predef.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/bmi_spam.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/perl.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dbfunctions.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/filtertest.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/host.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dkim.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/sha_ver.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/structs.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/child.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/danessl.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/drtables.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/store.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/macro_predef.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dane-openssl.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/configure.default, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/std-crypto.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dkim_transport.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/tls-cipher-stdname.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/crypt16.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/rfc2047.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exiwhat.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dns.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/route.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/match.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dcc.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exim.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/tlscert-gnu.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/smtp_in.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exinext.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/spool_mbox.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/rewrite.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/rda.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/base64.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/valgrind.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/convert4r3.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/functions.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/cnumber.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/spam.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/ip.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/tlscert-openssl.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/mytypes.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/version.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/exim_checkaccess.src, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory src/auths
+dpkg-source: warning: ignoring deletion of file src/auths/xtextdecode.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/call_pwcheck.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/heimdal_gssapi.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/pwcheck.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/external.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/spa.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/tls.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/spa.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/gsasl_exim.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/call_pam.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/auth-spa.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/plaintext.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/dovecot.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/dovecot.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/cyrus_sasl.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/cram_md5.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/get_no64_data.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/auth-spa.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/external.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/tls.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/call_radius.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/cram_md5.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/cyrus_sasl.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/get_data.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/plaintext.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/check_serv_cond.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/heimdal_gssapi.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/gsasl_exim.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/pwcheck.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/auths/xtextencode.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory src/pdkim
+dpkg-source: warning: ignoring deletion of file src/pdkim/signing.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/pdkim/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/pdkim/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/pdkim/config.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/pdkim/pdkim_hash.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/pdkim/crypt_ver.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/pdkim/pdkim.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/pdkim/pdkim.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/pdkim/signing.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory src/routers
+dpkg-source: warning: ignoring deletion of file src/routers/rf_get_transport.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/ipliteral.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/iplookup.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/rf_self_action.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/rf_queue_add.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/rf_get_errors_address.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/accept.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/queryprogram.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/rf_set_ugid.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/dnslookup.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/manualroute.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/redirect.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/ipliteral.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/accept.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/rf_functions.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/rf_lookup_hostlist.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/rf_get_munge_headers.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/redirect.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/rf_expand_data.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/rf_get_ugid.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/iplookup.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/dnslookup.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/rf_change_domain.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/queryprogram.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/routers/manualroute.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory src/lookups
+dpkg-source: warning: ignoring deletion of file src/lookups/sqlite.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/pgsql.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/spf.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/lmdb.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/testdb.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/dsearch.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/lf_check_file.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/nisplus.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/dbmdb.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/whoson.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/lsearch.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/lf_sqlperform.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/passwd.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/ldap.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/mysql.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/lf_functions.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/oracle.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/readsock.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/dnsdb.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/lf_quote.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/redis.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/json.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/cdb.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/ibase.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/nis.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/lookups/ldap.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory src/transports
+dpkg-source: warning: ignoring deletion of file src/transports/appendfile.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/pipe.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/autoreply.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/autoreply.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/smtp.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/pipe.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/smtp_socks.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/queuefile.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/queuefile.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/appendfile.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/tf_maildir.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/lmtp.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/smtp.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/lmtp.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/transports/tf_maildir.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory scripts
+dpkg-source: warning: ignoring deletion of file scripts/Configure, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/lookups-Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/arch-type, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/Configure-os.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/newer, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/Configure-os.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/reversion, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/source_checks, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/exim_install, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/Configure-eximon, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/MakeLinks, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/os-type, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/Configure-config.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file scripts/Configure-Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory util
+dpkg-source: warning: ignoring deletion of file util/proxy_protocol_client.pl, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file util/gen_pkcs3.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file util/unknownuser.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file util/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file util/renew-opendmarc-tlds.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file util/ratelimit.pl, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file util/ocsp_fetch.pl, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file util/mkcdb.pl, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file util/cramtest.pl, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file util/logargs.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file util/chunking_fixqueue_finalnewlines.pl, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory Local
+dpkg-source: warning: ignoring deletion of file doc/ChangeLog, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/dbm.discuss.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/README.SIEVE, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/GnuTLS-FAQ.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/Exim4.upgrade, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/cve-2019-13917, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/filter.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/exim.8, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/DANE-draft-notes, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/experimental-spec.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/OptionLists.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/openssl.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/cve-2020-qualys, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/spec.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/NewStuff, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/cve-2016-9663, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/Exim3.upgrade, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/cve-2019-15846
+dpkg-source: warning: ignoring deletion of file doc/cve-2019-15846/qualys.mbx, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/cve-2019-15846/mitre.mbx, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/cve-2019-15846/posting-2.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/cve-2019-15846/posting-0.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/cve-2019-15846/cve.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/cve-2019-15846/posting-1.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory OS
+dpkg-source: warning: ignoring deletion of file OS/Makefile-OpenBSD, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/os.h-SunOS5, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/os.h-GNU, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/os.Configuring, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/Makefile-Linux, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/Makefile-GNU, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/Makefile-Darwin, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/os.h-Darwin, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/os.c-Linux, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/os.h-FreeBSD, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/os.c-SunOS5, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/Makefile-FreeBSD, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/Makefile-Default, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/os.c-GNU, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/os.h-Linux, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/eximon.conf-Default, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/os.c-FreeBSD, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/os.h-OpenBSD, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/Makefile-Base, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/Makefile-SunOS5, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory OS/unsupported
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-SunOS5-hal, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-AIX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-NetBSD-a.out, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-HP-UX-9, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-SunOS4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-ULTRIX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-AIX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-IRIX6, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-HP-UX-9, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-HI-UX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-GNUkNetBSD, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-GNUkFreeBSD, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-HP-UX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-SCO_SV, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-OpenUNIX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-HI-OSF, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-IRIX65, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-BSDI, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-GNUkNetBSD, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-IRIX65, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-QNX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-HI-OSF, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-DragonFly, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-NetBSD, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-OSF1, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-HP-UX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-Unixware7, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-Unixware7, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-IRIX632, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-HI-OSF, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-OpenUNIX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-DGUX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-BSDI, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-GNUkFreeBSD, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-IRIX6, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-OSF1, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-mips, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-UNIX_SV, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-IRIX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-IRIX65, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-NetBSD, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-IRIX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-USG, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-DragonFly, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-IRIX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-SunOS5-hal, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-SCO, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-IRIX632, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-SunOS4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-SCO_SV, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-OSF1, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-IRIX632, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-QNX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-CYGWIN, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-BSDI, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-UNIX_SV, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-mips, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-NetBSD-a.out, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-HI-UX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-SCO, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-IRIX6, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-ULTRIX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-cygwin, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-USG, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-HP-UX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-DGUX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-cygwin, use --include-removal to override
+dpkg-source: info: building exim4 in exim4_4.94.2-7.debian.tar.xz
+dpkg-source: info: building exim4 in exim4_4.94.2-7.dsc
+ dpkg-genbuildinfo --build=source
+ dpkg-genchanges --build=source >../exim4_4.94.2-7_source.changes
+dpkg-genchanges: info: not including original source code in upload
+ dpkg-source -i --after-build .
+dpkg-buildpackage: info: binary and diff upload (original source NOT included)
+Now running lintian exim4_4.94.2-7_source.changes ...
+warning: running with root privileges is not recommended!
+W: exim4 source: build-depends-on-versioned-berkeley-db Build-Depends:libdb5.3-dev
+W: exim4 source: orig-tarball-missing-upstream-signature exim4_4.94.2.orig.tar.xz
+N: 1 hint overridden (1 error)
+Finished running lintian.
