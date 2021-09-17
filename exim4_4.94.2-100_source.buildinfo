@@ -1,16 +1,16 @@
 Format: 1.0
 Source: exim4
 Architecture: source
-Version: 4.94.2-7
+Version: 4.94.2-100
 Checksums-Md5:
- 17f8688e2f089e182c9e72463610aa62 1771 exim4_4.94.2-7.dsc
+ fc105789250a82d47dcebea2901a31c1 1779 exim4_4.94.2-100.dsc
 Checksums-Sha1:
- 070a6f85cca07f8091ab7e82ad73be237a0ebdf0 1771 exim4_4.94.2-7.dsc
+ 02ad8395422cef94cee9d04e6cb9807d6616ac91 1779 exim4_4.94.2-100.dsc
 Checksums-Sha256:
- 635f2a0f0b45d58435b7925bb72735aaf7a1bd16eac030c2f8c26329794f4c88 1771 exim4_4.94.2-7.dsc
+ d7f3f17c59e8dd1da0795e1d9d1a84b22034bfd64ff96981d3efbe9267db35e9 1779 exim4_4.94.2-100.dsc
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Thu, 16 Sep 2021 15:04:34 +0000
+Build-Date: Fri, 17 Sep 2021 07:25:28 +0000
 Installed-Build-Depends:
  autoconf (= 2.69-14),
  automake (= 1:1.16.3-2),
@@ -161,4 +161,4 @@ Installed-Build-Depends:
  zlib1g (= 1:1.2.11.dfsg-2)
 Environment:
  DEB_BUILD_OPTIONS="parallel=2"
- SOURCE_DATE_EPOCH="1626192297"
+ SOURCE_DATE_EPOCH="1631862332"

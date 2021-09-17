@@ -1,8 +1,8 @@
  dpkg-buildpackage -us -uc -ui -i -d -S
 dpkg-buildpackage: info: source package exim4
-dpkg-buildpackage: info: source version 4.94.2-7
+dpkg-buildpackage: info: source version 4.94.2-100
 dpkg-buildpackage: info: source distribution unstable
-dpkg-buildpackage: info: source changed by Andreas Metzler <ametzler@debian.org>
+dpkg-buildpackage: info: source changed by Package Store <kitsune.solar@gmail.com>
  dpkg-source -i --before-build .
  debian/rules clean
 dh clean --no-parallel
@@ -448,16 +448,18 @@ dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-USG, use --i
 dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-HP-UX, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-DGUX, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-cygwin, use --include-removal to override
-dpkg-source: info: building exim4 in exim4_4.94.2-7.debian.tar.xz
-dpkg-source: info: building exim4 in exim4_4.94.2-7.dsc
+dpkg-source: info: building exim4 in exim4_4.94.2-100.debian.tar.xz
+dpkg-source: info: building exim4 in exim4_4.94.2-100.dsc
  dpkg-genbuildinfo --build=source
- dpkg-genchanges --build=source >../exim4_4.94.2-7_source.changes
+ dpkg-genchanges --build=source >../exim4_4.94.2-100_source.changes
 dpkg-genchanges: info: not including original source code in upload
  dpkg-source -i --after-build .
 dpkg-buildpackage: info: binary and diff upload (original source NOT included)
-Now running lintian exim4_4.94.2-7_source.changes ...
+Now running lintian exim4_4.94.2-100_source.changes ...
 warning: running with root privileges is not recommended!
 W: exim4 source: build-depends-on-versioned-berkeley-db Build-Depends:libdb5.3-dev
+W: exim4 source: no-nmu-in-changelog
 W: exim4 source: orig-tarball-missing-upstream-signature exim4_4.94.2.orig.tar.xz
+W: exim4 source: source-nmu-has-incorrect-version-number 4.94.2-100
 N: 1 hint overridden (1 error)
 Finished running lintian.

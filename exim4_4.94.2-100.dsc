@@ -2,7 +2,7 @@ Format: 3.0 (quilt)
 Source: exim4
 Binary: exim4-base, exim4-config, exim4-daemon-light, exim4, exim4-daemon-heavy, eximon4, exim4-dev
 Architecture: any all
-Version: 4.94.2-7
+Version: 4.94.2-100
 Maintainer: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
 Uploaders:  Andreas Metzler <ametzler@debian.org>, Marc Haber <mh+debian-packages@zugschlus.de>
 Homepage: https://www.exim.org/
@@ -22,10 +22,10 @@ Package-List:
  eximon4 deb mail optional arch=any
 Checksums-Sha1:
  4854541833583d82c6e667d3dde566d41162eec3 1838076 exim4_4.94.2.orig.tar.xz
- e501cf5061ef93c9c2a0a2893d4d9d1381babc05 482960 exim4_4.94.2-7.debian.tar.xz
+ 6cfe20620289b5cc0f1935efb7fa5219168ea7eb 483092 exim4_4.94.2-100.debian.tar.xz
 Checksums-Sha256:
  051861fc89f06205162f12129fb7ebfe473383bb6194bf8642952bfd50329274 1838076 exim4_4.94.2.orig.tar.xz
- 543326451414a14b6b8f6844aefc6abbad04867a3479000f100501470b9aa6d2 482960 exim4_4.94.2-7.debian.tar.xz
+ 6b959a45ebd1c6c5b5e44b16b2e1a275341bb52737895f86e9d1b5c3e98937f0 483092 exim4_4.94.2-100.debian.tar.xz
 Files:
  4fbf1ebb36f0f43bb94ed0848eb13256 1838076 exim4_4.94.2.orig.tar.xz
- 4ec43e6809e4adb99b2359f924bfdd13 482960 exim4_4.94.2-7.debian.tar.xz
+ 6c2bc31e5c31251fc58e244bdb69f793 483092 exim4_4.94.2-100.debian.tar.xz
