@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sun, 03 Oct 2021 12:00:00 +0000
+Source: exim4
+Architecture: source
+Version: 4.95-100
+Distribution: unstable
+Urgency: medium
+Maintainer: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
+Changed-By: Package Store <kitsune.solar@gmail.com>
+Changes:
+ exim4 (4.95-100) unstable; urgency=medium
+ .
+   * COMMIT: 3df22f4cbeb38bf814274b264b93c2131d05f9d3.
+Checksums-Sha1:
+ 754914d7e94381c7597da0191b26da8165522b9b 1778 exim4_4.95-100.dsc
+ 04ad72d8957044a25f2bb3bcc03ed29cb1039214 1865172 exim4_4.95.orig.tar.xz
+ b2b33f8c13bb14e90a63e4b4d7a3c2c888a78f7e 465084 exim4_4.95-100.debian.tar.xz
+ d34574189b53439c6dfd9d06f8b890817a1042fa 4387 exim4_4.95-100_source.buildinfo
+Checksums-Sha256:
+ ad421bdaddffb6840c123c1390ed1a61d3f1c7e41b4fb4712216a3f22c4b5e82 1778 exim4_4.95-100.dsc
+ cc9cb653fff2ea947c3702680b59c99ac0bd1bbf19976d37e22a463cd804f167 1865172 exim4_4.95.orig.tar.xz
+ fd0b23c0c7f9dde80f2d6b1c158308f4d035ef262532c87f299cdd0498e658da 465084 exim4_4.95-100.debian.tar.xz
+ 10a4d02b9c12e04e1a62f993ac28261fca5104973555742183347e5e246fe2ac 4387 exim4_4.95-100_source.buildinfo
+Files:
+ 8692e4ef438ee6f0e59e772a0c8c465a 1778 mail standard exim4_4.95-100.dsc
+ b57515d34e97b0be12f7d38d316b15eb 1865172 mail standard exim4_4.95.orig.tar.xz
+ b0dbd55a61434ece81e05d324057334a 465084 mail standard exim4_4.95-100.debian.tar.xz
+ 21d757a21ae29db41b9939c67154f284 4387 mail standard exim4_4.95-100_source.buildinfo

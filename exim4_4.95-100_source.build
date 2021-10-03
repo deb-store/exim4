@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui -i -d -S
 dpkg-buildpackage: info: source package exim4
-dpkg-buildpackage: info: source version 4.94.2-100
+dpkg-buildpackage: info: source version 4.95-100
 dpkg-buildpackage: info: source distribution unstable
 dpkg-buildpackage: info: source changed by Package Store <kitsune.solar@gmail.com>
  dpkg-source -i --before-build .
@@ -25,7 +25,7 @@ make[1]: Leaving directory '/root/git/repo_src/_build'
  dpkg-source -i -b .
 dpkg-source: info: using source format '3.0 (quilt)'
 dpkg-source: warning: upstream signing key but no upstream tarball signature
-dpkg-source: info: building exim4 using existing ./exim4_4.94.2.orig.tar.xz
+dpkg-source: info: building exim4 using existing ./exim4_4.95.orig.tar.xz
 dpkg-source: info: using patch list from debian/patches/series
 dpkg-source: warning: ignoring deletion of file README.UPDATING, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file ABOUT, use --include-removal to override
@@ -98,6 +98,7 @@ dpkg-source: warning: ignoring deletion of file src/imap_utf7.c, use --include-r
 dpkg-source: warning: ignoring deletion of file src/directory.c, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file src/filter.c, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file src/bmi_spam.h, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file src/dnsbl.c, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file src/dane.c, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file src/spool_out.c, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file src/smtp_out.c, use --include-removal to override
@@ -365,8 +366,6 @@ dpkg-source: warning: ignoring deletion of file OS/os.h-GNU, use --include-remov
 dpkg-source: warning: ignoring deletion of file OS/os.Configuring, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/Makefile-Linux, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/Makefile-GNU, use --include-removal to override
-dpkg-source: warning: ignoring deletion of file OS/Makefile-Darwin, use --include-removal to override
-dpkg-source: warning: ignoring deletion of file OS/os.h-Darwin, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/os.c-Linux, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/os.h-FreeBSD, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/os.c-SunOS5, use --include-removal to override
@@ -423,12 +422,14 @@ dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-IRIX, use --
 dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-IRIX65, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-NetBSD, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-IRIX, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-Darwin, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-USG, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-DragonFly, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-IRIX, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-SunOS5-hal, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-SCO, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-IRIX632, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-Darwin, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-SunOS4, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-SCO_SV, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-OSF1, use --include-removal to override
@@ -448,18 +449,18 @@ dpkg-source: warning: ignoring deletion of file OS/unsupported/os.h-USG, use --i
 dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-HP-UX, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/Makefile-DGUX, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file OS/unsupported/os.c-cygwin, use --include-removal to override
-dpkg-source: info: building exim4 in exim4_4.94.2-100.debian.tar.xz
-dpkg-source: info: building exim4 in exim4_4.94.2-100.dsc
+dpkg-source: info: building exim4 in exim4_4.95-100.debian.tar.xz
+dpkg-source: info: building exim4 in exim4_4.95-100.dsc
  dpkg-genbuildinfo --build=source
- dpkg-genchanges --build=source >../exim4_4.94.2-100_source.changes
-dpkg-genchanges: info: not including original source code in upload
+ dpkg-genchanges --build=source >../exim4_4.95-100_source.changes
+dpkg-genchanges: info: including full source code in upload
  dpkg-source -i --after-build .
-dpkg-buildpackage: info: binary and diff upload (original source NOT included)
-Now running lintian exim4_4.94.2-100_source.changes ...
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian exim4_4.95-100_source.changes ...
 warning: running with root privileges is not recommended!
 W: exim4 source: build-depends-on-versioned-berkeley-db Build-Depends:libdb5.3-dev
 W: exim4 source: no-nmu-in-changelog
-W: exim4 source: orig-tarball-missing-upstream-signature exim4_4.94.2.orig.tar.xz
-W: exim4 source: source-nmu-has-incorrect-version-number 4.94.2-100
+W: exim4 source: orig-tarball-missing-upstream-signature exim4_4.95.orig.tar.xz
+W: exim4 source: source-nmu-has-incorrect-version-number 4.95-100
 N: 1 hint overridden (1 error)
 Finished running lintian.

@@ -1,16 +1,16 @@
 Format: 1.0
 Source: exim4
 Architecture: source
-Version: 4.94.2-100
+Version: 4.95-100
 Checksums-Md5:
- fc105789250a82d47dcebea2901a31c1 1779 exim4_4.94.2-100.dsc
+ 8692e4ef438ee6f0e59e772a0c8c465a 1778 exim4_4.95-100.dsc
 Checksums-Sha1:
- 02ad8395422cef94cee9d04e6cb9807d6616ac91 1779 exim4_4.94.2-100.dsc
+ 754914d7e94381c7597da0191b26da8165522b9b 1778 exim4_4.95-100.dsc
 Checksums-Sha256:
- d7f3f17c59e8dd1da0795e1d9d1a84b22034bfd64ff96981d3efbe9267db35e9 1779 exim4_4.94.2-100.dsc
+ ad421bdaddffb6840c123c1390ed1a61d3f1c7e41b4fb4712216a3f22c4b5e82 1778 exim4_4.95-100.dsc
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Mon, 20 Sep 2021 08:52:39 +0000
+Build-Date: Sun, 03 Oct 2021 09:39:23 +0000
 Installed-Build-Depends:
  autoconf (= 2.69-14),
  automake (= 1:1.16.3-2),
@@ -138,7 +138,7 @@ Installed-Build-Depends:
  libuuid1 (= 2.36.1-8),
  libxml2 (= 2.9.10+dfsg-6.7),
  libzstd1 (= 1.4.8+dfsg-2.1),
- linux-libc-dev (= 5.10.46-4),
+ linux-libc-dev (= 5.10.46-5),
  login (= 1:4.8.1-1),
  lsb-base (= 11.1.0),
  m4 (= 1.4.18-5),
@@ -161,4 +161,4 @@ Installed-Build-Depends:
  zlib1g (= 1:1.2.11.dfsg-2)
 Environment:
  DEB_BUILD_OPTIONS="parallel=2"
- SOURCE_DATE_EPOCH="1631862332"
+ SOURCE_DATE_EPOCH="1633262400"
