@@ -22,10 +22,10 @@ Package-List:
  eximon4 deb mail optional arch=any
 Checksums-Sha1:
  04ad72d8957044a25f2bb3bcc03ed29cb1039214 1865172 exim4_4.95.orig.tar.xz
- 84a1d6959e98d0e10bb5651a06adaea75d1fd941 465028 exim4_4.95-100.debian.tar.xz
+ 310c6cbf7e29f5b2695259ce12aa2d1ae60d599c 465044 exim4_4.95-100.debian.tar.xz
 Checksums-Sha256:
  cc9cb653fff2ea947c3702680b59c99ac0bd1bbf19976d37e22a463cd804f167 1865172 exim4_4.95.orig.tar.xz
- 2ed6798ecb936f74dceae9cf259359c2fcc1bac52cd1df9f9e73a7054c0a7a09 465028 exim4_4.95-100.debian.tar.xz
+ dd355cb241f30aa092a2e30e8727eeb72cde9ec070725448ce7e97ebda491bbe 465044 exim4_4.95-100.debian.tar.xz
 Files:
  b57515d34e97b0be12f7d38d316b15eb 1865172 exim4_4.95.orig.tar.xz
- 03b388e491d74fb7dd9a68d3ed620e92 465028 exim4_4.95-100.debian.tar.xz
+ 7ba3a9e13c3d44785fee20b7385bab38 465044 exim4_4.95-100.debian.tar.xz
