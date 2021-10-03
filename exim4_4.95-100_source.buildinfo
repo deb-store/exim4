@@ -3,14 +3,14 @@ Source: exim4
 Architecture: source
 Version: 4.95-100
 Checksums-Md5:
- 8692e4ef438ee6f0e59e772a0c8c465a 1778 exim4_4.95-100.dsc
+ 5d158ccb41c846fec69e4a0247705f68 1778 exim4_4.95-100.dsc
 Checksums-Sha1:
- 754914d7e94381c7597da0191b26da8165522b9b 1778 exim4_4.95-100.dsc
+ 656e0a0d3dd251dc5f5f394129adccafa0f5707d 1778 exim4_4.95-100.dsc
 Checksums-Sha256:
- ad421bdaddffb6840c123c1390ed1a61d3f1c7e41b4fb4712216a3f22c4b5e82 1778 exim4_4.95-100.dsc
+ 06df38bed804d96dd7eb29f33ad3c005526d61e73fa5abf106671c1779a20346 1778 exim4_4.95-100.dsc
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Sun, 03 Oct 2021 09:39:23 +0000
+Build-Date: Sun, 03 Oct 2021 09:47:01 +0000
 Installed-Build-Depends:
  autoconf (= 2.69-14),
  automake (= 1:1.16.3-2),
