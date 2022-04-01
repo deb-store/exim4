@@ -15,14 +15,14 @@ Checksums-Sha1:
  f8863595b59f1777428c49fd8045461cdcdd2388 1778 exim4_4.95-100.dsc
  04ad72d8957044a25f2bb3bcc03ed29cb1039214 1865172 exim4_4.95.orig.tar.xz
  310c6cbf7e29f5b2695259ce12aa2d1ae60d599c 465044 exim4_4.95-100.debian.tar.xz
- 09410aba770a8dd35a106802d62640d08fcf2c8a 4387 exim4_4.95-100_source.buildinfo
+ 2f5b52778e9cd8596a0bb3ffd0d692fc2d241cb1 4616 exim4_4.95-100_source.buildinfo
 Checksums-Sha256:
  6a71271d0277144374db784cafb70d8b059df82df81c6cfa4b7c622b5f727603 1778 exim4_4.95-100.dsc
  cc9cb653fff2ea947c3702680b59c99ac0bd1bbf19976d37e22a463cd804f167 1865172 exim4_4.95.orig.tar.xz
  dd355cb241f30aa092a2e30e8727eeb72cde9ec070725448ce7e97ebda491bbe 465044 exim4_4.95-100.debian.tar.xz
- 709fab9a6e674aefadf79eda1bc76ce734db6fa7699e593bb363e0181f9616ae 4387 exim4_4.95-100_source.buildinfo
+ 0279c430d6c3bf12d837bc7862e8fe5af3358dacbd8814a61ee7160c7c5dde7a 4616 exim4_4.95-100_source.buildinfo
 Files:
  0dbab474f08326e2bec79a2bbbd907ea 1778 mail standard exim4_4.95-100.dsc
  b57515d34e97b0be12f7d38d316b15eb 1865172 mail standard exim4_4.95.orig.tar.xz
  7ba3a9e13c3d44785fee20b7385bab38 465044 mail standard exim4_4.95-100.debian.tar.xz
- 6fa1f2dbe25e2f2fd620e4f7f087902d 4387 mail standard exim4_4.95-100_source.buildinfo
+ 54222429c442a404ba89515efbd859a7 4616 mail standard exim4_4.95-100_source.buildinfo
